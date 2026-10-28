@@ -1,0 +1,22 @@
+// TECHATRONIC.COM
+// CheapStepper Library
+// https://github.com/tyhenry/CheapStepper
+
+#include <CheapStepper.h>
+
+CheapStepper stepper (8,9,10,11);
+
+void setup()
+{
+  
+  stepper.setRpm(12); 
+  
+}
+
+void loop() {
+
+ stepper.moveDegreesCW (180); // you can set the angle
+delay(2000); 
+stepper.moveDegreesCCW (160); // you can set the angle
+delay(2000);  
+}
